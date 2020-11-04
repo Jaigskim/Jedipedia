@@ -107,16 +107,6 @@ if (wgUserGroups) {
   }
 }
 
-//Prüfe, ob Benutzer Verschieberechte hat oder ein Administrator ist
-//Wenn ja, wird HotCat geladen, ansonsten (neuer Benutzer, IP) nicht
-if (wgUserGroups) {
-	execute_hotcat=false;
-	for (i=0; i<wgUserGroups.length; i++) {
-		if (wgUserGroups[i]=="move" || wgUserGroups[i]=="sysop") {execute_hotcat=true;break;}
-	}
-	if(execute_hotcat==true) importScript('Benutzer:C-3PO/HotCat.js');
-}
-
 importScript('MediaWiki:Functions.js');
 importScript('MediaWiki:Header.js');
 

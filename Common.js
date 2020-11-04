@@ -20,7 +20,7 @@ function setSpecialUploadTemplate() {
     }
   }
 } 
-addOnloadHook(setSpecialUploadTemplate);
+$(setSpecialUploadTemplate);
 
 /***** Konfiguriert von Benutzer SVG *****/
  

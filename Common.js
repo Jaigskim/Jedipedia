@@ -36,7 +36,7 @@ function remove_no_license_special_upload() {
     return;
   license.removeChild(options[0]);
 }
-addOnloadHook(remove_no_license_special_upload);
+$(remove_no_license_special_upload);
 
 // Entferne auf [[Spezial:Mehrere_Dateien_hochladen]] „keine Vorauswahl“
 function remove_no_license_special_multipleupload() {
@@ -50,7 +50,7 @@ function remove_no_license_special_multipleupload() {
     return;
   license.removeChild(options[0]);
 }
-addOnloadHook(remove_no_license_special_multipleupload);
+$(remove_no_license_special_multipleupload);
 
 
 
@@ -213,7 +213,7 @@ if (document.URL.indexOf("action=edit") > 0 || document.URL.indexOf("action=subm
      }
  }
  
- addOnloadHook( createCollapseButtons );
+ $( createCollapseButtons );
 
  /**
  * Dynamic Navigation Bars (experimental)
@@ -334,7 +334,7 @@ function replaceusername() {
     }
   }
 }
-addOnloadHook(replaceusername);
+$(replaceusername);
 
 //------ Link FA ------//
 
@@ -369,7 +369,7 @@ function addfaicon() {
         }
     }
 }
-addOnloadHook(addfaicon);
+$(addfaicon);
 
 //-------------------------------------------------------------------------------------
 /* Magisches Editintro. Kopiert aus MediaWiki:Common.js der Wookieepedia (Original von der en:Wikipedia), von Sikon für Monobook modifiziert */
@@ -445,7 +445,7 @@ for (i=0; i<objects.length; i++) {
 	}
 }
 }
-addOnloadHook(updategallery);
+$(updategallery);
 
 /*JavaScript-Dialog beim Bild-Upload ausschalten*/
 $('a.wikia-button.upphotos').click(function () {
@@ -1392,7 +1392,7 @@ function rewriteTitle() {
 	}
 }
 // END JavaScript title rewrite
-addOnloadHook(rewriteTitle);
+$(rewriteTitle);
 
 /* YouTubePlayer */
 
@@ -1423,7 +1423,7 @@ function RTEtoCodeMode(i){
   return true;
 }
  
-addOnloadHook(RTEtoCodeMode);
+$(RTEtoCodeMode);
 
 importArticles({
     type: 'script',
